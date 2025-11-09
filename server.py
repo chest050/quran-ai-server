@@ -78,7 +78,7 @@ def search_in_book(question: str):
         return None
 
     # نرجع فقرة حول السطر الأفضل (3 قبل + 3 بعد)
-    start = max(0, best_index - 2)
+    start = max(0, best_index - 1)
     end = min(len(LINES), best_index + 2)
     paragraph = "\n".join(LINES[start:end])
     return paragraph
